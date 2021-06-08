@@ -64,6 +64,7 @@ alias yaysu='yay -Sua --noconfirm'                  # update only AUR packages
 alias pacrm='sudo pacman -Rs'                       # rm standard packages
 alias pacsearch='pacman -Qs'                        # searching install packages
 alias yayclean='yay -Yc'                            # cleanup yay orphaned dependencies
+alias ystall='yay -S'                             # installing aur packages
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
@@ -83,6 +84,7 @@ alias gstat='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
 alias gpush='git push'
+alias gadd='git add'
 
 # adding color to grep
 alias grep='grep --color=auto'
