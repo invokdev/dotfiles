@@ -23,7 +23,7 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'mbbill/undotree'
@@ -39,8 +39,7 @@ Plug 'alvan/vim-closetag'
 
 call plug#end()
 
-colorscheme gruvbox
-set background=dark
+colorscheme nord
 
 nnoremap <SPACE> <Nop>
 let mapleader=" "
