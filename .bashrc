@@ -63,6 +63,7 @@ alias pacstall='sudo pacman -S'                     # install standard packages
 alias yaysu='yay -Sua --noconfirm'                  # update only AUR packages
 alias pacrm='sudo pacman -Rs'                       # rm standard packages
 alias pacsearch='pacman -Qs'                        # searching install packages
+alias yayclean='yay -Yc'                            # cleanup yay orphaned dependencies
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
