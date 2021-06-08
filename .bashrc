@@ -57,6 +57,18 @@ alias la='exa -a --color=always --group-directories-first'  # all files and dire
 alias lt='exa -aT --color=always --group-directories-first' # tree listing
 
 # git
+alias addup='git add -u'
+alias addall='git add .'
+alias branch='git branch'
+alias checkout='git checkout'
+alias clone='git clone'
+alias commit='git commit -m'
+alias fetch='git fetch'
+alias pull='git pull origin'
+alias stat='git status'
+alias tag='git tag'
+alias newtag='git tag -a'
+
 
 
 
