@@ -50,6 +50,8 @@ alias yaysy='yay -Syu --noconfirm'                  # update standard && AUR pac
 alias pacclean='sudo pacman -Sc --noconfirm'        # cleanup orphaned packages
 alias pacstall='sudo pacman -S'                     # install standard packages
 alias yaysu='yay -Sua --noconfirm'                  # update only AUR packages
+alias pacrm='sudo pacman -Rs'                       # rm standard packages
+alias pacsearch='pacman -Qs'                        # searching install packages
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
@@ -69,7 +71,17 @@ alias stat='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
 
+# adding color to grep
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
+# avoid accidental overwrites
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
 
+### STARSHIP PROMPT ###
+eval "$(starship init bash)"
 
 
