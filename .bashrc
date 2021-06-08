@@ -5,11 +5,22 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-alias ls='ls --color=auto'
-PS1='[\u@\h \W]\$ '
+#alias ls='ls --color=auto'
+#PS1='[\u@\h \W]\$ '
 
-# Neofetch on terminal start
-neofetch
+# path
+
+if [ -d "$HOME/.bin" ] ;
+      then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+      then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/Applications" ] ;
+      then PATH="$HOME/Applications:$PATH"
+fi
 
 ### ARCHIVE EXTRACTION  
 # usage: ex <file>
@@ -63,13 +74,14 @@ alias addup='git add -u'
 alias addall='git add .'
 alias branch='git branch'
 alias checkout='git checkout'
-alias clone='git clone'
-alias commit='git commit -m'
+alias gclone='git clone'
+alias gcommit='git commit -m'
 alias fetch='git fetch'
 alias pull='git pull origin'
-alias stat='git status'
+alias gstat='git status'
 alias tag='git tag'
 alias newtag='git tag -a'
+alias gpush='git push'
 
 # adding color to grep
 alias grep='grep --color=auto'
@@ -84,4 +96,5 @@ alias rm='rm -i'
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
 
-
+# Neofetch on termianl start 
+neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in
