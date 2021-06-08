@@ -15,6 +15,6 @@ success_symbol = "[  ](bold blue)"
 error_symbol = "[  ](bold red)"
 
 [shell]
-bash_indicator = "  "
+bash_indicator = " "
 powershell_indicator = "  "
 disabled = false
