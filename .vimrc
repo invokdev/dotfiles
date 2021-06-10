@@ -36,6 +36,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
+Plug 'terryma/vim-multiple-cursors'
 
 call plug#end()
 

@@ -22,6 +22,13 @@ if [ -d "$HOME/Applications" ] ;
       then PATH="$HOME/Applications:$PATH"
 fi
 
+# SHOPT
+shopt -s autocd         # cd's to named directory
+shopt -s cdspell        # autocorrect cd
+
+# IGNORE CASE SENSiTIVITY WHEN TAB COMPLETING
+bind 'set completion-ignore-case on'
+
 ### ARCHIVE EXTRACTION  
 # usage: ex <file>
 ex ()
@@ -85,6 +92,7 @@ alias tag='git tag'
 alias newtag='git tag -a'
 alias gpush='git push'
 alias gadd='git add'
+alias ginit= 'git init'
 
 # adding color to grep
 alias grep='grep --color=auto'
