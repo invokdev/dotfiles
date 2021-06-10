@@ -68,6 +68,10 @@ alias pacclean='sudo pacman -Sc --noconfirm'        # cleanup orphaned packages
 alias pacstall='sudo pacman -S'                     # install standard packages
 alias pacrm='sudo pacman -Rs'                       # rm standard packages
 alias pacsearch='pacman -Qs'                        # searching install packages
+alias par='paru'
+alias parstall='paru -S'
+alias parsu='paru -Sua'
+
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
