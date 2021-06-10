@@ -104,6 +104,12 @@ alias cp='cp -i'
 alias mv='mv -i'
 alias rm='rm -i'
 
+# Change direcotry aliases
+alias home='cd ~'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
 
