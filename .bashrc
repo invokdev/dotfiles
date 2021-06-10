@@ -92,7 +92,6 @@ alias tag='git tag'
 alias newtag='git tag -a'
 alias gpush='git push'
 alias gadd='git add'
-alias ginit= 'git init'
 
 # adding color to grep
 alias grep='grep --color=auto'
