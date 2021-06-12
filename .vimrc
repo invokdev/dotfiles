@@ -45,7 +45,11 @@ colorscheme nord
 
 nnoremap <SPACE> <Nop>
 let mapleader=" "
-nnoremap <leader>n :NERDTree<CR>
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <leader>t :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
