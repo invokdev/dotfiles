@@ -38,6 +38,7 @@ Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'othree/html5.vim'
+Plug 'christoomey/vim-tmux-navigator'
 
 call plug#end()
 
