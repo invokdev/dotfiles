@@ -109,6 +109,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+# Pavucontorl
+alias pavc='pavucontrol'
+
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
 

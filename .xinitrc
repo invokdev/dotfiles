@@ -39,10 +39,10 @@ wifi(){
 	echo -e ": $wifi" 
 }
 
-bat(){
-	bat=$(acpi -b | sed 's/.*[charging|unknown], \([0-9]*\)%.*/\1/gi')
-	echo -e ": $bat%"
-}
+#bat(){
+#	bat=$(acpi -b | sed 's/.*[charging|unknown], \([0-9]*\)%.*/\1/gi')
+#	echo -e ": $bat%"
+#}
 
 temp(){
     temp=$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000)) 
@@ -50,6 +50,6 @@ temp(){
 }
 
 while true; do 
-    xsetroot -name " $(mem) | $(disk) | $(cpu) | $(temp) | $(wifi) | $(bat) | $(dte) "
+    xsetroot -name " $(mem) | $(disk) | $(cpu) | $(temp) | $(wifi) | $(dte) "
 	sleep 3s
 done 
