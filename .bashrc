@@ -3,8 +3,7 @@
 #
 
 # If not running interactively, don't do anything
-[[ $- != *i* ]] && return
-
+[ -z "$PS1" ] && return
 #alias ls='ls --color=auto'
 #PS1='[\u@\h \W]\$ '
 
@@ -20,6 +19,15 @@ fi
 
 if [ -d "$HOME/Applications" ] ;
       then PATH="$HOME/Applications:$PATH"
+fi
+
+# Powerline shell
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
+
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
 # SHOPT
@@ -114,7 +122,6 @@ alias ....='cd ../../..'
 alias pavc='pavucontrol'
 
 ### STARSHIP PROMPT ###
-eval "$(starship init bash)"
 
 # Neofetch on termianl start 
 neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in
