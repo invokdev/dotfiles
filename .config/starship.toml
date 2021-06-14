@@ -1,5 +1,5 @@
 # Don't print a new line at the start of the prompt
-add_newline = false
+#add_newline = false
 
 # Make prompt a single line instead of two lines
 [line_break]
@@ -10,10 +10,12 @@ disabled = true
 [package]
 disabled = true
 
+# Character used
 [character]
 success_symbol = "[  ](bold blue)"
 error_symbol = "[  ](bold red)"
 
+# Shell indicators 
 [shell]
 bash_indicator = " "
 powershell_indicator = "  "
