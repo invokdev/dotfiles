@@ -10,7 +10,7 @@
 
 # Window Manager
 
-exec dwm &
+exec dwm & 
 
 # Bash script for dwm status bar
 
