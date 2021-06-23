@@ -44,7 +44,7 @@ bind 'set completion-ignore-case on'
 ex ()
 {
     if [ -f $1 ] ; then
-        case $ in
+        case $1 in
             *.tar.bz2)  tar xjf     $1 ;;
             *.tar.gz)   tar xzf     $1 ;;
             *.bz2)      bunzip2     $1 ;;
