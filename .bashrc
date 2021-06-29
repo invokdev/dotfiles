@@ -1,9 +1,9 @@
 #
 # ~/.bashrc
 #
-if [[ $- != *i* ]] ; then
-    return
-fi 
+ [[ $- != *i* ]] && return
+
+
 # If not running interactively, don't do anything
 #[ -z "$PS1" ] && return
 #alias ls='ls --color=auto'
@@ -24,13 +24,13 @@ if [ -d "$HOME/Applications" ] ;
 fi
 
 # Powerline shell
-#function _update_ps1() {
-#    PS1=$(powerline-shell $?)
-#}
+function _update_ps1() {
+    PS1=$(powerline-shell $?)
+}
 
-#if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-#fi
+if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
 
 # SHOPT
 shopt -s autocd         # cd's to named directory
@@ -124,6 +124,6 @@ alias ....='cd ../../..'
 alias pavc='pavucontrol'
 
 ### STARSHIP PROMPT ###
-eval "$(starship init bash)"
+#eval "$(starship init bash)"
 # Neofetch on termianl start 
 neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in
