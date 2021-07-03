@@ -1,0 +1,8 @@
+alacritty-git 0.9.0.1845.g4dd70ba3-1
+bspwm-git 0.9.10.r33.ge22d0fa-1
+emacs-markdown-mode-git 2.4.r122.g1c7d29d-1
+google-chrome 91.0.4472.114-1
+librewolf-bin 89.0.2-1
+nodejs-markdown-toc 1.2.0-1
+paru 1.7.3-1
+polybar 3.5.6-1
