@@ -39,10 +39,13 @@ Plug 'alvan/vim-closetag'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'othree/html5.vim'
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'embark-theme/vim', {'as': 'embark'}
+Plug 'severij/vadelma'
 
 call plug#end()
 
-colorscheme nord
+colorscheme vadelma
+set background=dark
 
 nnoremap <SPACE> <Nop>
 let mapleader=" "
@@ -57,3 +60,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:closetag_filenames = '*.html, *.xml'
+let g:lightline = {
+            \ 'colorscheme': 'embark',
+            \ }
+let g:airline_theme = 'embark'

@@ -70,7 +70,7 @@ ex ()
 # git bare repository alias
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
-alias clear='clear && neofetch' # I use ssh a lot - fancy reminder of what I'm logged into
+#alias clear='clear && neofetch' # I use ssh a lot - fancy reminder of what I'm logged into
 
 # pacman and yay
 alias pacsy='sudo pacman -Syyu'                     # update standard packages
@@ -126,4 +126,4 @@ alias pavc='pavucontrol'
 ### STARSHIP PROMPT ###
 #eval "$(starship init bash)"
 # Neofetch on termianl start 
-neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in
+#neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in
