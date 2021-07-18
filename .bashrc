@@ -1,3 +1,6 @@
+# EXPORT
+export TERM="xterm-256color" 
+
 #
 # ~/.bashrc
 #
@@ -122,6 +125,10 @@ alias ....='cd ../../..'
 
 # Pavucontorl
 alias pavc='pavucontrol'
+
+# SSH Shortcuts
+alias sshrog='ssh invokdev@rogarch'
+alias sshnuc='ssh invokdev@gentoonuc'
 
 ### STARSHIP PROMPT ###
 #eval "$(starship init bash)"
