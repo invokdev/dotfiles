@@ -19,6 +19,7 @@ fakeroot
 fd
 file
 findutils
+firefox
 flex
 gawk
 gcc
@@ -28,7 +29,9 @@ google-chrome
 grep
 groff
 grub
+gtop
 gzip
+htop
 intel-ucode
 kitty
 librewolf-bin
@@ -67,6 +70,7 @@ texinfo
 ttf-font-awesome
 vim
 which
+xclip
 xf86-video-vesa
 xorg-bdftopcf
 xorg-docs

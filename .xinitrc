@@ -45,7 +45,7 @@ bat(){
 }
 
 temp(){
-    temp=$(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000)) 
+    temp=$(($(cat /sys/class/thermal/thermal_zone2/temp) / 1000)) 
     echo -e ": $temp°C" 
 }
 
