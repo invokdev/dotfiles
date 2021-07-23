@@ -27,13 +27,13 @@ if [ -d "$HOME/Applications" ] ;
 fi
 
 # Powerline shell
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
-}
+#function _update_ps1() {
+#    PS1=$(powerline-shell $?)
+#}
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+#if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
+#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
 # SHOPT
 shopt -s autocd         # cd's to named directory
@@ -131,6 +131,6 @@ alias sshrog='ssh invokdev@rogarch'
 alias sshnuc='ssh invokdev@gentoonuc'
 
 ### STARSHIP PROMPT ###
-#eval "$(starship init bash)"
+eval "$(starship init bash)"
 # Neofetch on termianl start 
 #neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in

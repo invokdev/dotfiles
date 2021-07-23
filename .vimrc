@@ -4,7 +4,7 @@ filetype plugin on
 set relativenumber
 set nu 
 set hidden
-set tabstop=4 softtabstop=4
+set tabstop=2 softtabstop=2 
 set noerrorbells
 set smartindent
 set shiftwidth=4
