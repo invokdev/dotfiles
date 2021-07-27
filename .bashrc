@@ -127,10 +127,8 @@ alias ....='cd ../../..'
 alias pavc='pavucontrol'
 
 # SSH Shortcuts
-alias sshrog='ssh invokdev@rogarch'
+alias sshrog='ssh invokdev@rogtoo'
 alias sshnuc='ssh invokdev@gentoonuc'
 
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
-# Neofetch on termianl start 
-#neofetch # I use SSH a lot so this gives me an easy reminder of which machine I;m in
