@@ -10,7 +10,7 @@ error_symbol = " (bold red) "
 [hostname]
 ssh_only = false
 # prefix = " "
-disabled = false
+disabled = true
 style = "bold italic #FDFBFC"
 
 [package]
@@ -21,3 +21,11 @@ format = "[$path]($style)[$read_only]($read_only_style) "
 truncation_length = 2
 truncate_to_repo = false
 truncation_symbol = "../"
+style = "fg:21"
+
+[username]
+style_user = "bold italic #FDFBFC"
+format = "[$user]($style) "
+disabled = false
+show_always = true
+
