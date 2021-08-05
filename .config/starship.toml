@@ -8,9 +8,9 @@ success_symbol = " (bold green)"
 error_symbol = " (bold red) "
 
 [hostname]
-ssh_only = false
+ssh_only = true
 # prefix = " "
-disabled = true
+disabled = false
 style = "bold italic #FDFBFC"
 
 [package]

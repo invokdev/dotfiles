@@ -129,7 +129,7 @@ alias ....='cd ../../..'
 alias pavc='pavucontrol'
 
 # SSH Shortcuts
-alias sshrog='ssh invokdev@rogtoo'
+alias sshrog='ssh invokdev@rogarch'
 alias sshnuc='ssh invokdev@gentoonuc'
 
 ### STARSHIP PROMPT ###
