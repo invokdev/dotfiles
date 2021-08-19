@@ -2,6 +2,7 @@
 export TERM="xterm-256color" 
 export EDITOR='vim'
 export VISUAL='vim'
+export LANG='en_US.utf-8'
 
 #
 # ~/.bashrc
@@ -134,3 +135,8 @@ alias sshnuc='ssh invokdev@gentoonuc'
 
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
+
+export NVM_DIR="/home/invokdev/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+
