@@ -1,8 +1,8 @@
 # EXPORT
 export TERM="xterm-256color" 
-export EDITOR='vim'
-export VISUAL='vim'
-export LANG='en_US.utf-8'
+export EDITOR="vim"
+export VISUAL="vim"
+export LANG="en_US.utf-8"
 
 #
 # ~/.bashrc

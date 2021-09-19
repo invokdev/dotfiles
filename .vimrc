@@ -24,7 +24,6 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 call plug#begin('~/.vim/plugged')
 
 Plug 'arcticicestudio/nord-vim'
-Plug 'tpope/vim-fugitive'
 Plug 'leafgarland/typescript-vim'
 Plug 'mbbill/undotree'
 Plug 'valloric/youcompleteme'
