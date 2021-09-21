@@ -79,15 +79,23 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 #alias clear='clear && neofetch' # I use ssh a lot - fancy reminder of what I'm logged into
 
 # pacman and yay
-alias pacsy='sudo pacman -Syyu'                     # update standard packages
-alias pacclean='sudo pacman -Sc --noconfirm'        # cleanup orphaned packages
-alias pacstall='sudo pacman -S'                     # install standard packages
-alias pacrm='sudo pacman -Rs'                       # rm standard packages
-alias pacsearch='pacman -Qs'                        # searching install packages
-alias par='paru'
-alias parstall='paru -S'
-alias parsu='paru -Sua'
+#alias pacsy='sudo pacman -Syyu'                     # update standard packages
+#alias pacclean='sudo pacman -Sc --noconfirm'        # cleanup orphaned packages
+#alias pacstall='sudo pacman -S'                     # install standard packages
+#alias pacrm='sudo pacman -Rs'                       # rm standard packages
+#alias pacsearch='pacman -Qs'                        # searching install packages
+#alias par='paru'
+#alias parstall='paru -S'
+#alias parsu='paru -Sua'
 
+# emerge/portage
+
+alias search='eix'
+alias install='doas emerge -aqv'
+alias remove='doas emerge -cav'
+alias esync='doas emerge --sync'
+alias erysnc='doas emerge-webrsync'
+alias world='doas emerge -aqvuDN @world'
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
