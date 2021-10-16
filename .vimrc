@@ -7,7 +7,7 @@ set hidden
 set tabstop=2 softtabstop=2 
 set noerrorbells
 set smartindent
-set shiftwidth=4
+set shiftwidth=2
 set incsearch
 set undodir=~/.vim/undodir
 set noswapfile
@@ -26,7 +26,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'arcticicestudio/nord-vim'
 Plug 'leafgarland/typescript-vim'
 Plug 'mbbill/undotree'
-Plug 'valloric/youcompleteme'
+Plug 'ycm-core/YouCompleteMe'
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'mitermayer/vim-prettier'
