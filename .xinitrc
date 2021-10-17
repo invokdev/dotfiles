@@ -2,7 +2,7 @@
 
 #  Wallpaper
   
-	nitrogen --restore &
+	feh --bg-scale ~/wallpapers/lion.jpg &
 
 # Compositor
 
@@ -30,13 +30,23 @@ cpu(){
 }
 
 disk(){
-	disk=$(df -Ph | grep "/dev/nvme0n1p3" | awk {'print $5'})
+	disk=$(df -Ph | grep "/dev/root" | awk {'print $5'})
 	echo -e ": $disk"
 }
 
 wifi(){
 	wifi=$(nmcli dev wifi | grep -E '^[*]' | awk '/*/ {print $3}')
 	echo -e ": $wifi" 
+}
+
+netup(){
+  netup=$(ifconfig eno1 | grep "TX packets" | awk {'print $6 $7'})
+  echo -e ": $netup"
+}
+
+netdown(){
+  netdown=$(ifconfig eno1 | grep "RX packets" | awk {'print $6 $7'})
+  echo -e ": $netdown"
 }
 
 bat(){
@@ -50,6 +60,6 @@ temp(){
 }
 
 while true; do 
-    xsetroot -name " $(mem) | $(disk) | $(cpu) | $(temp) | $(wifi) | $(dte) "
+  xsetroot -name " $(mem) | $(disk) | $(cpu) | $(temp) | $(netup) $(netdown) | $(dte) "
 	sleep 3s
 done 
