@@ -138,8 +138,8 @@ alias ....='cd ../../..'
 alias pavc='pavucontrol'
 
 # SSH Shortcuts
-alias sshrog='ssh invokdev@rogarch'
-alias sshnuc='ssh invokdev@gentoonuc'
+alias area51='ssh invokdev@area51'
+alias gentoonuc='ssh invokdev@gentoonuc'
 
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
