@@ -12,6 +12,10 @@
 
   /home/$USER/dwm_bar/dwm_bar.sh & 
 
+# Set brightness
+
+  xbacklight -set 75 &
+
 # Window Manager
 
   exec dwm  
