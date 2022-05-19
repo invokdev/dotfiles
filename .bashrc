@@ -74,7 +74,7 @@ ex ()
 ###### START ALIASES #######
 
 # git bare repository alias
-alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
+alias config='/usr/local/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 #alias clear='clear && neofetch' # I use ssh a lot - fancy reminder of what I'm logged into
 
@@ -90,15 +90,15 @@ alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 
 # emerge/portage
 
-alias search='eix'
-alias install='doas emerge -aqv'
-alias remove='doas emerge --deselect'
-alias clean='doas emerge --ask --depclean'
-alias sync='doas emerge --sync'
-alias rysnc='doas emerge-webrsync'
-alias world='doas emerge -aqvuDN @world'
-alias change-world='doas emerge --ask --quiet --update --changed-use --deep @world'
-alias read='doas eselect news read'
+#alias search='eix'
+#alias install='doas emerge -aqv'
+#alias remove='doas emerge --deselect'
+#alias clean='doas emerge --ask --depclean'
+#alias sync='doas emerge --sync'
+#alias rysnc='doas emerge-webrsync'
+#alias world='doas emerge -aqvuDN @world'
+#alias change-world='doas emerge --ask --quiet --update --changed-use --deep @world'
+#alias read='doas eselect news read'
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
