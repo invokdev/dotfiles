@@ -18,10 +18,14 @@ set $term kitty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+#set $menu dmenu_path | dmenu | xargs swaymsg exec --
+set $menu rofi -m $(expr $(swaymsg -t get_tree | jq '.nodes | map([recurse(.nodes[]?, .floating_nodes[]?) | .focused] | any) | index(true)') - 1) -show drun -run-command 'swaymsg exec -- {cmd}'
+set $menu rofi -m $(swaymsg -t get_outputs | jq 'map(select(.active) | .focused) | index(true)') -show drun -run-command 'swaymsg exec -- {cmd}'
 # Firefox web browser
 set $firefox firefox
 set $background ~/wallpapers/scenic-painting.jpg
+set $lock swaylock -f -c 000000
+set $mail evolution
 
 ### Output configuration
 #
@@ -38,10 +42,10 @@ output * bg $background fill
 #
 # Example configuration:
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
-#          before-sleep 'swaylock -f -c 000000'
+  exec swayidle -w \
+          timeout 300 'swaylock -f -c 000000' \
+          timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -76,6 +80,9 @@ output * bg $background fill
 
     # Start firefox
     bindsym $mod+f exec $firefox
+
+    # Start evolution
+    bindsym $mod+m exec $mail
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -156,7 +163,7 @@ output * bg $background fill
 # Default workspaces for common programs
 #
 assign [class="^firefox$"] $ws2
-
+assign [class="^Microsoft-edge$"] $ws3
 #
 # Window borders
 #
@@ -204,6 +211,10 @@ gaps inner 1
     # Show the next scratchpad window or hide the focused scratchpad window.
     # If there are multiple scratchpad windows, this command cycles through them.
     bindsym $mod+minus scratchpad show
+#
+# Lock the screen manually
+#
+    bindsym $mod+Shift+Return exec $lock
 #
 # Resizing containers:
 #
