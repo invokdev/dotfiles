@@ -1,0 +1,19 @@
+configuration {
+  modi: "window,drun,ssh,combi";
+  font: "ubuntu 10";
+  combi-modi: "drun,ssh";
+  drun-display-format: "{name}";
+  dpi: 96;
+  show-icons: true;
+  display-drun: "Applications";
+  drun-display-format: "{icon} {name}";
+}
+@theme "Arc-Dark"
+listview {
+   lines: 10;
+   columns: 3;
+}
+ 
+ window {
+   width: 40%;
+}
