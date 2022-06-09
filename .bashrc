@@ -2,7 +2,7 @@
 export TERM="xterm-256color" 
 export EDITOR="vim"
 export VISUAL="vim"
-export LANG="en_US.utf-8"
+export LANG="en_US.UTF-8"
 
 #
 # ~/.bashrc
@@ -143,6 +143,10 @@ alias pavc='pavucontrol'
 # SSH Shortcuts
 alias area51='ssh invokdev@area51'
 alias gentoonuc='ssh invokdev@gentoonuc'
+
+# Shutdown shortucuts
+alias reboot='doas shutdown -r now'
+alias shutdown='doas shutdown now'
 
 ### STARSHIP PROMPT ###
 eval "$(starship init bash)"
