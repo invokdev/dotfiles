@@ -2,7 +2,7 @@
 
 #  Wallpaper
   
-	feh --bg-scale ~/wallpapers/lion.jpg &
+	feh --bg-fill ~/wallpapers/w13-bg.png --bg-fill ~/wallpapers/w13-bg.png &
 
 # Compositor
 
@@ -12,9 +12,9 @@
 
   /home/$USER/dwm_bar/dwm_bar.sh & 
 
-# Set brightness
+# Start Pipewire
 
-  xbacklight -set 75 &
+  /usr/bin/gentoo-pipewire-launcher &
 
 # Window Manager
 
