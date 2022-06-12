@@ -97,8 +97,9 @@ alias clean='doas emerge --ask --depclean'
 alias sync='doas emerge --sync'
 alias rysnc='doas emerge-webrsync'
 alias world='doas emerge -aqvuDN @world'
-alias change-world='doas emerge --ask --quiet --update --changed-use --deep @world'
+alias changed-use='doas emerge --ask --quiet --update --verbose --changed-use --deep @world'
 alias read='doas eselect news read'
+alias dispatch='doas dispatch-conf'
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first' # preferred listing
