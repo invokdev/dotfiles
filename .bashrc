@@ -143,6 +143,9 @@ alias pavc='pavucontrol'
 
 # SSH Shortcuts
 
+# Random 
+alias douche='clear && neofetch'
+
 # Shutdown shortucuts
 alias reboot='doas shutdown -r now'
 alias shutdown='doas shutdown now'
